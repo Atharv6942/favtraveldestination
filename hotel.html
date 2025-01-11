@@ -12,6 +12,12 @@
       nav ul li a {text-decoration:none; font-size:30px; margin:10px;}
       header {background-color:#BDB76B; width:100%; height:100px;text-align:center;}
       footer {background-color:LightSkyBlue; width:100%; height:80px;text-align:center;font-size:25px;}
+      .name {width:100%;border-collapse:collapse;background-color:#FFF0F5;}
+      .name thead th {background-color:#000000;color:#FFFFFF;padding:10px;font-size:25px;}
+      .name tbody td {padding:10px;}
+      .name tfoot tr td {padding:10px;background-color:#778899;text-align:center;font-weight:bold;}
+      .name tbody tr:nth-child(even) {background-color:#FFFACD;}
+      .name tbody tr:hover {background-color:LightCyan;}
       
     </style>
   </head>
@@ -28,7 +34,7 @@
       </nav>
     </header>
     <main>
-      <table class="name">
+      <table class="name" border="1">
        <thead>
          <tr>
            <th>
@@ -40,23 +46,30 @@
        </thead> 
         <tbody>
           <tr>
-            <td> <img src="hotel 1 Conservatorium Hotel.jpg"> <h3> Conservatorium Hotel</h3></td> 
+            <td> <img src="hotel 1 Conservatorium Hotel.jpg" width="450" height="350"> <h3> Conservatorium Hotel</h3></td> 
             <td> Rs 47,600/- Per Night</td>
             <td> Indoor swimming pool, Fitness centre and Room Service </td>
           </tr>
           <tr>
-            <td> <img src="Hotel des arts.jpg"><h3> Hotel Des Arts</h3></td>
+            <td> <img src="Hotel des arts.jpg" width="450" height="350"><h3> Hotel Des Arts</h3></td>
             <td> Rs 15,827/- Per Night</td>
             <td> Room service, Free WiFi and Daily housekeeping</td>
           </tr>
           <tr>
-            <td> <img src="Ambassde Hotel.jpg"><h3> Ambassade Hotel</h3></td>
+            <td> <img src="Ambassde Hotel.jpg" width="450" height="350"><h3> Ambassade Hotel</h3></td>
             <td> Rs 16,284/- Per Night </td>
             <td> Free WiFi, Private Parking and Airport Shuttle
 </td>
           </tr>
           
         </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="3">
+              Have a Nice Stay!
+            </td>
+          </tr>
+        </tfoot>
       </table>
     </main>
     <footer>
