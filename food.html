@@ -17,6 +17,9 @@
       .dish img { height:300px;width:300px; transition:width 2s, height 2s, transform 2s;}
       .dish img:hover{width:450px;height:400px;transform:rotate(15deg);}
       .content {font-size:27px;}
+      #overlapp {position:relative;height:300px;width:300px;margin:5%;left:30%;}
+      #overlapp img {position:absolute;transition:opacity 1s;}
+      #overlapp img.front:hover {opacity:0;}
     </style>
   </head>
   <body>
@@ -44,6 +47,10 @@
         <h3> Hagelslag</h3>
         
         
+      </div>
+      <div id="overlapp">
+        <img class="back" src="bitterballs.jpeg" height="300" width="300">
+        <img class="front" src="bitterballs2.jpg" height="300" width="300">
       </div>
     </main>
     <footer>
