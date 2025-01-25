@@ -1,6 +1,7 @@
 <!doctype html>
 <html>
   <head>
+ 
     <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>
@@ -14,6 +15,37 @@
       footer {background-color:LightSkyBlue; width:100%; height:80px;text-align:center;font-size:25px;}
       
     </style>
+    <script>
+      function validate(){
+      var name 1=document.getElementB("name").value;
+            var phone1 1=document.getElementB("phone").value;
+        var email1 1=document.getElementB("email").value
+        var message1=document.getElementB("message").value
+        if(name1.length<5){
+text="Please enter full name
+  error_message.innerHTML=text;
+          return false;
+        }
+
+        if(isNAN(phone1) ||phone1.length!=10)  {
+         text="Please enter a valid phone number";
+          error_message.innerHTML=text;
+          return false;
+        }
+
+
+
+
+
+
+
+
+
+
+
+      }
+        
+    </script>
   </head>
   <body>
     <header>
