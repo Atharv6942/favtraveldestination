@@ -13,27 +13,36 @@
       nav ul li a {text-decoration:none; font-size:30px; margin:10px;}
       header {background-color:#BDB76B; width:100%; height:100px;text-align:center;}
       footer {background-color:LightSkyBlue; width:100%; height:80px;text-align:center;font-size:25px;}
-      
+      .wrapper {position:absolute;top:150px;left:500px;width:400px;padding:25px;}
+      .wrapper h2 {text-align:center;letter-spacing:3px;}
+      .wrapper .input_field {margin-bottom:10px;}
+      .wrapper input {width:100%;padding:10px;}
+      .wrapper textarea{width:100%;padding:10px;height:80px;}
+      .wrapper .btn input[type="submit"] {width:100%;background:grey;letter-spacing:4px;font-weight:bold;cursor:pointer;}
+      #error_message{text-align:center;font-size:15px;color:red;}
     </style>
     <script>
       function validate(){
-      var name 1=document.getElementById("name").value;
-            var phone1 1=document.getElementById("phone").value;
+        var name 1=document.getElementById("name").value;
+        var phone1 1=document.getElementById("phone").value;
         var email1 1=document.getElementById("email").value
         var message1=document.getElementById("message").value
         if(name1.length<5){
+          
           text="Please enter full name";
-            error_message.innerHTML=text;  
+          error_message.innerHTML=text;  
 
           return false;
         }
 
-        if(isNaN(phone1) ||phone1.length!=10)  {
-         text="Please enter a valid phone number";
+        if(isNaN(phone1) ||phone1.length!=10){
+          
+          text="Please enter a valid phone number";
           error_message.innerHTML=text;
           return false;
         }
         if(email1.indexOf("@")==-1 || email1.length<6){
+          
           text="Please enter a valid email";
           error_message.innerHTML=text;
           return false;
@@ -48,8 +57,7 @@
         }
 
         alert("form subbmitted successfully") ;
-
-     return true;
+        return true;
       }
 
 
