@@ -32,8 +32,24 @@ text="Please enter full name
           error_message.innerHTML=text;
           return false;
         }
+        if(email1).indexOf("@")==-1 || email1.length<6){
+          text="Please enter a valid email";
+          error_message.innerHTML=text;
+          return false;
+
+        }
+        if(message1.length<=10) {
+          text="Please enter more than 10 characters number";
+          error_message.innerHTML=text;
+          return false;
 
 
+        }
+
+        alert("form subbmitted successfully")
+
+     return true;
+      }
 
 
 
