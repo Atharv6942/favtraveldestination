@@ -17,22 +17,23 @@
     </style>
     <script>
       function validate(){
-      var name 1=document.getElementB("name").value;
-            var phone1 1=document.getElementB("phone").value;
-        var email1 1=document.getElementB("email").value
-        var message1=document.getElementB("message").value
+      var name 1=document.getElementById("name").value;
+            var phone1 1=document.getElementById("phone").value;
+        var email1 1=document.getElementById("email").value
+        var message1=document.getElementById("message").value
         if(name1.length<5){
-text="Please enter full name
-  error_message.innerHTML=text;
+          text="Please enter full name";
+            error_message.innerHTML=text;  
+
           return false;
         }
 
-        if(isNAN(phone1) ||phone1.length!=10)  {
+        if(isNaN(phone1) ||phone1.length!=10)  {
          text="Please enter a valid phone number";
           error_message.innerHTML=text;
           return false;
         }
-        if(email1).indexOf("@")==-1 || email1.length<6){
+        if(email1.indexOf("@")==-1 || email1.length<6){
           text="Please enter a valid email";
           error_message.innerHTML=text;
           return false;
@@ -46,7 +47,7 @@ text="Please enter full name
 
         }
 
-        alert("form subbmitted successfully")
+        alert("form subbmitted successfully") ;
 
      return true;
       }
@@ -59,7 +60,7 @@ text="Please enter full name
 
 
 
-      }
+      
         
     </script>
   </head>
@@ -82,15 +83,15 @@ text="Please enter full name
         </h2>
         <form id="myform" onsumbit="return validate();">
           <div class="input_field">
-            <input <type="text" placeholder="Name" id="name">
+            <input type="text" placeholder="Name" id="name">
             
           </div>
           <div class="input_field">
-            <input <type="text" placeholder="Phone" id="phone">
+            <input type="text" placeholder="Phone" id="phone">
             
           </div>
           <div class="input_field">
-            <input <type="text" placeholder="Email" id="email">
+            <input type="text" placeholder="Email" id="email">
             
           </div>
           <div class="input_field">
